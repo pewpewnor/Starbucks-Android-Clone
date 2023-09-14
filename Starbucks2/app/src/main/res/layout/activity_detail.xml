@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <!--    dp for with & height-->
+    <!--    sp for text size-->
+    <!--        layout = match_parent-->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/picCoffee"
+        android:layout_width="325dp"
+        android:layout_height="325dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/cold_brew"
+        app:layout_constraintBottom_toTopOf="@+id/block"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/picCoffee"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvPrice"
+        android:orientation="vertical"
+        android:id="@+id/block"
+        android:paddingHorizontal="40dp"
+        >
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:fontFamily="@font/avernir_black"
+            />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/description"
+            android:fontFamily="@font/avenir_roman"
+            android:textColor="@color/actual_grey"
+            android:layout_marginBottom="0dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price"
+        android:fontFamily="@font/avenir_next_bold"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/block"
+        app:layout_constraintBottom_toTopOf="@+id/btnGrab"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+
+
+    <Button
+        android:id="@+id/btnGrab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GRAB THIS COFFEE"
+        android:fontFamily="@font/avenir_next_bold"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintTop_toBottomOf="@id/tvPrice"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/green"
+        android:background="@drawable/roundedbutton"
+        android:layout_marginHorizontal="30dp"
+        />
+
+    <FrameLayout
+        android:id="@+id/mapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvDescription"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

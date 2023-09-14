@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Starbucks</string>
+    <string name="title_menu">Menu</string>
+    <string name="title_cart">Cart</string>
+    <string name="title_order">My Order</string>
+    <string name="name">Name</string>
+    <string name="price">$5.35</string>
+    <string name="description">Description</string>
+    <string name="location">City: Jakarta</string>
+    <string name="ready_for_pickup">Ready For Pickup</string>
+    <string name="confirm_order">confirm order?</string>
+    <string name="yes_confirm_order">YES, CONFIRM ORDER</string>
+    <string name="cancel">CANCEL</string>
+
+    <string-array name="locations">
+        <item>Starbucks Skyline Building</item>
+        <item>Starbucks Drive Thru hayam Wuruk</item>
+        <item>Starbucks Coffee Stasiun Gambir</item>
+    </string-array>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The total price is: "
+            android:fontFamily="@font/avernir_black"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price"
+            android:fontFamily="@font/avenir_next_italic"
+            android:textSize="30sp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm_order"
+        android:fontFamily="@font/avernir_black"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/black"
+        />
+
+    <Button
+        android:id="@+id/yesConf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/yes_confirm_order"
+        android:fontFamily="@font/avenir_roman"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/teal_200"
+        />
+
+    <Button
+        android:id="@+id/noConf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:fontFamily="@font/avenir_roman"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/teal_200"
+        />
+
+
+</LinearLayout>
