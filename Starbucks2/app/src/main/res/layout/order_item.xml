@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/grey"
+    android:id="@+id/cvProduct"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="30dp"
+    >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ready_for_pickup"
+                android:background="@color/green"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-black"
+                android:padding="10dp"
+                />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/tvLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/location"
+                android:textStyle="bold"
+                android:fontFamily="@font/avenir_next_regular"
+                android:paddingLeft="20dp"
+                />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:fontFamily="@font/avenir_roman"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                />
+
+            <TextView
+                android:textAlignment="textEnd"
+                android:id="@+id/tvPrice"
+                android:fontFamily="monospace"
+                android:paddingRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/price"
+                android:layout_marginBottom="10dp"
+                />
+
+
+        </LinearLayout>
+
+</androidx.cardview.widget.CardView>
